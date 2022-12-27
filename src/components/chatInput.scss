@@ -1,0 +1,58 @@
+.input-chat-container {
+    background-color: #080420;
+    display: flex;
+    padding: 1rem;
+    align-items: center;
+    height: 100% !important;
+    gap: 10px;
+    .button-container {
+      flex: 1;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      .icon{
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        .emoji {
+            position: absolute;
+            top: -360px;
+            background-color: #080420;
+            box-shadow: 0 5px 10px #9a86f3;
+            border-color: #9a86f3
+        }
+        svg{
+            font-size: 1.5rem;
+        }
+      }
+    }
+    .input-container {
+      flex: 20;
+      input {
+        width: 95%;
+        padding: 0.6rem;
+        font-size: 1rem;
+        border-radius: 100px;
+        outline: none;
+        border: none;
+      }
+      button {
+        background: transparent;
+        padding: 0.6rem 0;
+        border: none;
+        outline: none;
+        width: 5%;
+        svg{
+            font-size: 1.2rem;    
+            cursor: pointer;
+            color: white;
+        }
+        .btn-send{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+      }
+    }
+  }
