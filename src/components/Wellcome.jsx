@@ -7,11 +7,11 @@ function Wellcome(props) {
   const navigate = useNavigate()
   const [userName , setUserName] = useState(null)
   useEffect(()=>{
-  const user = JSON.parse(localStorage.getItem("chat-app-user")).username;
+  const user = JSON.parse(localStorage.getItem("chat-app-user"));
     if(!user){
       navigate('/login')
     }else{
-      setUserName(user)
+      setUserName(user.usename)
     }
   },[])
   return (
